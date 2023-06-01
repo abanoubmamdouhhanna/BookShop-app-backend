@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "db1c187a-656a-4a7e-b45b-166298f0838f",
+		"name": "Book Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24549496"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"bebo\",\r\n    \"email\": \"beboabanoub332001@gmail.com\",\r\n    \"password\": \"Bebo@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"bebo\",\r\n    \"email\": \"beboabanoub332001@gmail.com\",\r\n    \"password\": \"Bebo@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget password",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "reset password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"Beboabanoub@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/resetPassword/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwidXNlcklkIjoiNjQxZjRlZDdmYmZhYjE2Zjk1MjBiNGM0IiwiaWF0IjoxNjc5ODA2NDQ2fQ.uX2YdQkAhX7xZugXJqIIS9WyaFbMnvsCXie__bWLbQA",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"resetPassword",
+								"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwidXNlcklkIjoiNjQxZjRlZDdmYmZhYjE2Zjk1MjBiNGM0IiwiaWF0IjoxNjc5ODA2NDQ2fQ.uX2YdQkAhX7xZugXJqIIS9WyaFbMnvsCXie__bWLbQA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forget Password OTP",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "reset Password OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/resetPasswordOTP/beboabanoub332001@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"resetPasswordOTP",
+								"beboabanoub332001@gmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Add Book",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update Book",
+					"request": {
+						"method": "PATCH",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "updateBookThumbnail",
+					"request": {
+						"method": "PATCH",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "updateBookPdf",
+					"request": {
+						"method": "PATCH",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJlMTdmMzk5MDYyYmU0YzQ3NDNjOCIsInVzZXJfbmFtZSI6ImJlYm8iLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQGdtYWlsLmNvbSIsImlhdCI6MTY3OTYyODIzMn0.FxCIuBYavmezQ3cyn7MY3uLSBlzLe23teL5Z1cBgNg8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/books/deleteBook/641f20cc47f72ad89bec6e3f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"books",
+								"deleteBook",
+								"641f20cc47f72ad89bec6e3f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all books",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get book with id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get admin books",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "borrow book",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "return book",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "not Returned Books",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "borrowed Boooks History",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "update user",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjIxOTYwNWVmZGZlZTE0MTExNWE3MyIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjc5OTk3MTA4fQ.XO0ps1Qq8jxbaXyiPFCiDuNIChJqseP3fvZVTW5xyns",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"\",\r\n    \"newPassword\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/changePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"changePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "reactive account",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "upload Profile Pic",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjM4MWYwOWU4ZjY5MDljMDFjODVlMSIsInVzZXJfbmFtZSI6ImFiYW5vdWIiLCJlbWFpbCI6ImJlYm9hYmFub3ViMzMyMDAxQG91dGxvb2suY29tIiwiaWF0IjoxNjgwMDUyMTcyfQ.M-Iz4hG476ZEiLNdIN0b7o-uVoU8TX8s7548_XPT9Wc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/D:/CFC/Fries7.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/uploadProfilePic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"uploadProfilePic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload cover Pic",
+					"request": {
+						"method": "PATCH",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
